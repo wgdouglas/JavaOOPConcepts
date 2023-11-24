@@ -46,8 +46,8 @@ public class Student {
     @Override
     public String toString() {
         return ("Student's name is: " + this.getName() +
-                "Student age is: " + this.getAge() +
-                "Student address is: " + this.getAddress());
+                "\n Student age is: " + this.getAge() +
+                "\n Student address is: " + this.getAddress());
     }
 
     public static void main(String[] args) {
