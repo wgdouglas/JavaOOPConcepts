@@ -51,7 +51,7 @@ public class CustomerAccount {
         }
     }
     public void getCheckingDepositInput(){
-        System.out.println("Amount you want to withdraw from Checking Account");
+        System.out.println("Amount you want to deposit from Checking Account");
         double enteredAmount = userInput.nextDouble();
 
         if ((checkingBalance + enteredAmount) >=0){
