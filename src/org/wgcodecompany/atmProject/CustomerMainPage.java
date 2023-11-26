@@ -5,10 +5,10 @@ import java.text.DecimalFormat;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class CustomerMainPage extends CustomerAccount{
-    Scanner userMoneyInput = new Scanner(System.in);
+public class CustomerMainPage extends CustomerAccount{ // base class
+    Scanner userMoneyInput = new Scanner(System.in); // Scanner object to initialize user input
 
-    DecimalFormat moneyFormat = new DecimalFormat(" '$'###,##0.00");
+    DecimalFormat moneyFormat = new DecimalFormat("'$'###,##0.00");
     HashMap<Integer, Integer> data = new HashMap<Integer, Integer>();
 
     public void getLogin() throws IOException {
@@ -26,7 +26,7 @@ public class CustomerMainPage extends CustomerAccount{
 
                 System.out.println("Please enter your 4-digit PIN:");
                 setPinNumber(userMoneyInput.nextInt());
-            }catch (Exception error){
+            } catch (Exception error){
                 System.out.println("\n" + "Invalid input from user. Only number accepted." + "\n");
                 x = 2;
             }
@@ -38,7 +38,7 @@ public class CustomerMainPage extends CustomerAccount{
                 getAccountType();
             }else
                 System.out.println("Incorrect Customer ID/Pin" + "\n");
-        } while (x ==1);
+        } while (x == 1);
 //These are all basic validation checks above
 
     }
@@ -70,7 +70,7 @@ public class CustomerMainPage extends CustomerAccount{
 
     private void getChecking() {
         System.out.println("Your Checking Account:");
-        System.out.println("Select 1: - View Chceking Balance");
+        System.out.println("Select 1: - View Checking Balance");
         System.out.println("Select 2: - Withdraw Funds from Checking Account");
         System.out.println("Select 3: Deposit Funds into Checking Account");
         System.out.println("Select 4: Exit Checking Account");

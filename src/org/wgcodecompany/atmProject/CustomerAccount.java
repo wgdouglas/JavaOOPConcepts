@@ -76,7 +76,7 @@ public class CustomerAccount {
     }
     public void getSavingsDepositInput(){
         System.out.println("Saving Account Balance: " + moneyFormat.format(savingsBalance));
-        System.out.println("Amount you want to deposit from Saving Account: ");
+        System.out.println("Amount you want to deposit into your Savings Account: ");
         double enteredAmount = userInput.nextDouble();
 
         if ((savingsBalance + enteredAmount) >= 0){
